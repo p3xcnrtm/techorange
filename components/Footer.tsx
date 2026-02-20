@@ -1,0 +1,62 @@
+import React from 'react';
+import { Twitter, Github, Linkedin, Coffee } from 'lucide-react';
+
+export const Footer: React.FC = () => {
+  return (
+    <footer className="bg-white border-t border-orange-100 pt-16 pb-12 mt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+          <div className="flex items-center space-x-6">
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-orange-400 to-pink-600 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+              <img 
+                className="relative w-24 h-24 rounded-full object-cover border-4 border-white shadow-xl" 
+                src="peter-helmet.jpg" 
+                alt="Peter 'The Scraper' Chen" 
+                onError={(e) => {
+                    // Fallback if user hasn't uploaded the image yet
+                    e.currentTarget.src = "https://ui-avatars.com/api/?name=Peter+Chen&background=FF6B00&color=fff";
+                }}
+              />
+            </div>
+            <div>
+              <h3 className="font-display font-bold text-xl text-dark-900">Peter 'The Scraper' Chen</h3>
+              <p className="text-orange-500 font-medium text-sm mb-2">Chief Editor & Caffeine Enthusiast</p>
+              <p className="text-dark-800/60 text-sm max-w-sm">
+                "I scrape the web so you don't have to. Powered by coffee, React, and an irrational fear of 404 errors."
+              </p>
+            </div>
+          </div>
+          
+          <div className="flex flex-col md:items-end">
+            <div className="flex space-x-4 mb-6">
+              <a href="#" className="w-10 h-10 rounded-full bg-cream-100 flex items-center justify-center text-dark-800 hover:bg-orange-500 hover:text-white transition-colors">
+                <Twitter className="w-5 h-5" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-cream-100 flex items-center justify-center text-dark-800 hover:bg-orange-500 hover:text-white transition-colors">
+                <Github className="w-5 h-5" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-cream-100 flex items-center justify-center text-dark-800 hover:bg-orange-500 hover:text-white transition-colors">
+                <Linkedin className="w-5 h-5" />
+              </a>
+            </div>
+            <div className="text-right">
+                <a href="#" className="inline-flex items-center text-sm font-semibold text-dark-900 hover:text-orange-500 transition-colors">
+                    Buy me a coffee <Coffee className="ml-2 w-4 h-4" />
+                </a>
+            </div>
+          </div>
+        </div>
+        
+        <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-dark-800/40">
+          <p>© 2024 TechOrange. All rights reserved.</p>
+          <div className="flex space-x-6 mt-4 md:mt-0">
+            <a href="#" className="hover:text-dark-900 transition-colors">Privacy</a>
+            <a href="#" className="hover:text-dark-900 transition-colors">Terms</a>
+            <a href="#" className="hover:text-dark-900 transition-colors">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
