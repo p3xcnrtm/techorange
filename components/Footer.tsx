@@ -27,18 +27,16 @@ export const Footer: React.FC = () => {
               </p>
             </div>
           </div>
-  
-            <div className="text-right">
-                <a href="#" className="inline-flex items-center text-sm font-semibold text-dark-900 hover:text-orange-500 transition-colors">
-                    Buy me a coffee <Coffee className="ml-2 w-4 h-4" />
-                </a>
-            </div>
+
+          <div className="text-right">
+            <a href="#" className="inline-flex items-center text-sm font-semibold text-dark-900 hover:text-orange-500 transition-colors">
+              Buy me a coffee <Coffee className="ml-2 w-4 h-4" />
+            </a>
           </div>
         </div>
         
         <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-dark-800/40">
           <p>© 2013 TechOrange. All rights reserved.</p>
-        
         </div>
       </div>
     </footer>
