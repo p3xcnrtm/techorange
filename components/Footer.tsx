@@ -20,7 +20,7 @@ export const Footer: React.FC = () => {
               />
             </div>
             <div>
-              <h3 className="font-display font-bold text-xl text-dark-900">'The Scraper' Chen</h3>
+              <h3 className="font-display font-bold text-xl text-dark-900">Offiong 'The Scraper' Chen</h3>
               <p className="text-orange-500 font-medium text-sm mb-2">Chief Editor & Caffeine Enthusiast</p>
               <p className="text-dark-800/60 text-sm max-w-sm">
                 "I scrape the web so you don't have to. Powered by coffee, React, and an irrational fear of 404 errors."
