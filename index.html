@@ -1,45 +1,47 @@
-import React from 'react';
-import { Twitter, Github, Linkedin, Coffee } from 'lucide-react';
-
-export const Footer: React.FC = () => {
-  return (
-    <footer className="bg-white border-t border-orange-100 pt-16 pb-12 mt-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Top Section: Profile and Call to Action */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
-          <div className="flex items-center space-x-6">
-            <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-orange-400 to-pink-600 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-              <img 
-                className="relative w-24 h-24 rounded-full object-cover border-4 border-white shadow-xl" 
-                src="peter-helmet.jpg" 
-                alt="Peter 'The Scraper' Chen" 
-                onError={(e) => {
-                    e.currentTarget.src = "https://ui-avatars.com/api/?name=Peter+Chen&background=FF6B00&color=fff";
-                }}
-              />
-            </div>
-            <div>
-              <h3 className="font-display font-bold text-xl text-dark-900">Offiong 'The Scraper' Chen</h3>
-              <p className="text-orange-500 font-medium text-sm mb-2">Chief Editor & Caffeine Enthusiast</p>
-              <p className="text-dark-800/60 text-sm max-w-sm">
-                "I scrape the web so you don't have to. Powered by coffee, React, and an irrational fear of 404 errors."
-              </p>
-            </div>
-          </div>
-
-          <div className="text-right">
-            <a href="#" className="inline-flex items-center text-sm font-semibold text-dark-900 hover:text-orange-500 transition-colors">
-              Buy me a coffee <Coffee className="ml-2 w-4 h-4" />
-            </a>
-          </div>
-        </div>
-        
-        {/* Bottom Section: Copyright */}
-        <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-dark-800/40">
-          <p>© 2013 TechOrange. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-  );
-};
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechOrange | Premium Tech Journalism</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cream: { 50: '#FFFCF9', 100: '#FFF5E6', 200: '#FFE8CC', 300: '#FFD199' },
+              orange: { 400: '#FF8533', 500: '#FF6B00', 600: '#CC5600' },
+              dark: { 900: '#1A1A1A', 800: '#2D2D2D' }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Poppins', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    
+    <style>
+      body {
+        background-color: #FFF5E6;
+        color: #1A1A1A;
+      }
+      .gradient-blur {
+        mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
