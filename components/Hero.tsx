@@ -20,12 +20,6 @@ export const Hero: React.FC = () => {
             Curated insights from the world's leading tech publications. 
             We filter the noise so you can focus on the signal.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <button className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-semibold rounded-full text-white bg-orange-500 hover:bg-orange-600 transition-all shadow-lg hover:shadow-orange-500/30">
-              Start Reading
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </button>
-          </div>
         </div>
       </div>
       
