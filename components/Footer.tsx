@@ -20,26 +20,14 @@ export const Footer: React.FC = () => {
               />
             </div>
             <div>
-              <h3 className="font-display font-bold text-xl text-dark-900">Peter 'The Scraper' Chen</h3>
+              <h3 className="font-display font-bold text-xl text-dark-900">'The Scraper' Chen</h3>
               <p className="text-orange-500 font-medium text-sm mb-2">Chief Editor & Caffeine Enthusiast</p>
               <p className="text-dark-800/60 text-sm max-w-sm">
                 "I scrape the web so you don't have to. Powered by coffee, React, and an irrational fear of 404 errors."
               </p>
             </div>
           </div>
-          
-          <div className="flex flex-col md:items-end">
-            <div className="flex space-x-4 mb-6">
-              <a href="#" className="w-10 h-10 rounded-full bg-cream-100 flex items-center justify-center text-dark-800 hover:bg-orange-500 hover:text-white transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-cream-100 flex items-center justify-center text-dark-800 hover:bg-orange-500 hover:text-white transition-colors">
-                <Github className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-cream-100 flex items-center justify-center text-dark-800 hover:bg-orange-500 hover:text-white transition-colors">
-                <Linkedin className="w-5 h-5" />
-              </a>
-            </div>
+  
             <div className="text-right">
                 <a href="#" className="inline-flex items-center text-sm font-semibold text-dark-900 hover:text-orange-500 transition-colors">
                     Buy me a coffee <Coffee className="ml-2 w-4 h-4" />
@@ -49,12 +37,8 @@ export const Footer: React.FC = () => {
         </div>
         
         <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-dark-800/40">
-          <p>© 2024 TechOrange. All rights reserved.</p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-dark-900 transition-colors">Privacy</a>
-            <a href="#" className="hover:text-dark-900 transition-colors">Terms</a>
-            <a href="#" className="hover:text-dark-900 transition-colors">Cookies</a>
-          </div>
+          <p>© 2013 TechOrange. All rights reserved.</p>
+        
         </div>
       </div>
     </footer>
