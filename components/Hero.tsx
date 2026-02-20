@@ -25,9 +25,6 @@ export const Hero: React.FC = () => {
               Start Reading
               <ArrowRight className="ml-2 h-5 w-5" />
             </button>
-            <button className="inline-flex items-center justify-center px-8 py-3.5 border border-dark-900/10 text-base font-semibold rounded-full text-dark-900 bg-white hover:bg-cream-50 transition-all">
-              View Pricing
-            </button>
           </div>
         </div>
       </div>
